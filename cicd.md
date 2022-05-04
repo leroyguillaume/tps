@@ -50,3 +50,9 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 9) Modifiez le workflow pour que l'image Docker soit push sur `ghcr.io` avec pour tag `city-api:latest`.
 
 10) Écrivez un workflow GitHub Actions `release` qui, lorsqu'un tag au format `vX.X.X` soit poussé build et push l'image Docker avec un tag `city-api:X.X.X`.
+
+11) Installez Minikube sur votre machine local.
+
+12) Écrivez un chart Helm de déploiement de l'application.
+
+13) Déployez votre application dans votre Minikube.
