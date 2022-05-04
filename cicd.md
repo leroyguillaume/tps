@@ -56,3 +56,9 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 12) Écrivez un chart Helm de déploiement de l'application.
 
 13) Déployez votre application dans votre Minikube.
+
+14) Ajouter un endpoint `/metrics` compatible Prometheus (des [libs](https://sysdig.com/blog/prometheus-metrics/) sont disponibles).
+
+15) Ajoutez un Prometheus dans votre docker-compose qui scrappe les métriques de votre application.
+
+16) Ajoutez un Grafana dans votre docker-compose et créez y un dahsboard pour monitorer votre application.
