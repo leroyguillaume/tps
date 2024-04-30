@@ -47,18 +47,20 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 
 8) Modifiez le workflow pour qu'un build de l'image Docker soit réalisé à chaque push.
 
-9) Modifiez le workflow pour que l'image Docker soit push sur `ghcr.io` avec pour tag `city-api:latest`.
+9) Modifiez le workflow pour que l'image Docker soit push sur le DockerHub avec pour tag `city-api:latest`.
 
 10) Écrivez un workflow GitHub Actions `release` qui, lorsqu'un tag au format `vX.X.X` soit poussé build et push l'image Docker avec un tag `city-api:X.X.X`.
 
-11) Installez Minikube sur votre machine local.
+11) Modifiez le workflow pour qu'il scanne les CVEs présentes dans votre image.
 
-12) Écrivez un chart Helm de déploiement de l'application.
+12) Installez k3s sur votre machine local.
 
-13) Déployez votre application dans votre Minikube.
+13) Écrivez un chart Helm de déploiement de l'application.
 
-14) Ajouter un endpoint `/metrics` compatible Prometheus (des [libs](https://sysdig.com/blog/prometheus-metrics/) sont disponibles).
+14) Déployez votre application dans votre Minikube.
 
-15) Ajoutez un Prometheus dans votre docker-compose qui scrappe les métriques de votre application.
+15) Ajouter un endpoint `/metrics` compatible Prometheus (des [libs](https://sysdig.com/blog/prometheus-metrics/) sont disponibles).
 
-16) Ajoutez un Grafana dans votre docker-compose et créez y un dahsboard pour monitorer votre application.
+16) Ajoutez un Prometheus dans votre docker-compose qui scrappe les métriques de votre application.
+
+17) Ajoutez un Grafana dans votre docker-compose et créez y un dahsboard pour monitorer votre application.
