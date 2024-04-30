@@ -9,7 +9,7 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 
 ## Questions
 
-1) Créez un fichier `docker-compose.yml` et ajoutez-y un service `db` s'appuyant sur l'image Docker `postrges:latest`.
+1) Créez un fichier `docker-compose.yml` et ajoutez-y un service `db` s'appuyant sur l'image Docker `postgres:latest`.
 
 2) Créez une base de données `city_api` avec une table `city` contenant les colonnes suivantes :
     - `id`, un entier non signé non nul, clé primaire de la colonne ;
@@ -57,7 +57,7 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 
 13) Écrivez un chart Helm de déploiement de l'application.
 
-14) Déployez votre application dans votre Minikube.
+14) Déployez votre application dans votre k3s.
 
 15) Ajouter un endpoint `/metrics` compatible Prometheus (des [libs](https://sysdig.com/blog/prometheus-metrics/) sont disponibles).
 
