@@ -40,7 +40,7 @@
 
 8) Écrivez un workflow GitHub Actions `tests` pour exécuter les tests. La database ne doit pas être mocked.
 
-9) Modifiez le workflow pour qu'un build de l'image Docker soit réalisé à chaque push. Faites en sorte que le build soit caché pour optimiser le temps d'exécution.
+9) Écriver un workflow `build` pour build l'image Docker (amd + arm). Faites en sorte que le build soit caché pour optimiser le temps d'exécution.
 
 10) Ajoutez un scan trivy dans ce workflow.
 
