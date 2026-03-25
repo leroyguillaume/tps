@@ -1,12 +1,5 @@
 # CI/CD
 
-Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dépôt GitHub devra y figurer.
-
-## Prérequis
-
-- docker
-- docker-compose
-
 ## Questions
 
 1) Créez un fichier `docker-compose.yml` et ajoutez-y un service `db` s'appuyant sur l'image Docker `postgres:latest`.
@@ -41,26 +34,16 @@ Un rapport **détaillé** des actions réalisé est attendu. Un lien vers un dé
 
 5) Écrivez un fichier `Dockerfile` à la racine de votre projet. Testez que votre image Docker est correcte.
 
-6) Écrivez un workflow GitHub Actions `ci` pour qu'un linter soit exécuté à chaque push.
+6) Utilisez [pre-commit](https://pre-commit.com/) pour linter le code (Dockerfile inclus).
 
-7) Modifiez le workflow pour que les tests s'exécutent à chaque push.
+7) Écrivez un workflow GitHub Actions `quality` pour que pre-commit soit exécuté à chaque push.
 
-8) Modifiez le workflow pour qu'un build de l'image Docker soit réalisé à chaque push.
+8) Écrivez un workflow GitHub Actions `tests` pour exécuter les tests. La database ne doit pas être mocked.
 
-9) Modifiez le workflow pour que l'image Docker soit push sur le DockerHub avec pour tag `city-api:latest`.
+9) Modifiez le workflow pour qu'un build de l'image Docker soit réalisé à chaque push. Faites en sorte que le build soit caché pour optimiser le temps d'exécution.
 
-10) Écrivez un workflow GitHub Actions `release` qui, lorsqu'un tag au format `vX.X.X` soit poussé build et push l'image Docker avec un tag `city-api:X.X.X`.
+10) Ajoutez un scan trivy dans ce workflow.
 
-11) Modifiez le workflow pour qu'il scanne les CVEs présentes dans votre image.
+11) Ajoutez un workflow pour exécuter [Renovate](https://docs.renovatebot.com/).
 
-12) Installez k3s sur votre machine local.
-
-13) Écrivez un chart Helm de déploiement de l'application.
-
-14) Déployez votre application dans votre k3s.
-
-15) Ajouter un endpoint `/metrics` compatible Prometheus (des [libs](https://sysdig.com/blog/prometheus-metrics/) sont disponibles).
-
-16) Ajoutez un Prometheus dans votre docker-compose qui scrappe les métriques de votre application.
-
-17) Ajoutez un Grafana dans votre docker-compose et créez y un dahsboard pour monitorer votre application.
+12) Réflechissez et implémentez un workflow de release.
