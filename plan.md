@@ -5,8 +5,9 @@
 - Vérifier que la CI build l'image Docker
 - Vérifier que la CI run les tests
 - Vérifier que la CI passe trivy
-- Modifier le code qui introduit un bug pas visible par les tests et push 
+- Modifier le code de la PR qui introduit une nouvelle dépendance
 - Vérifier que le build de l'image Docker est cached
+- Modifier le code de la PR qui introduit un bug pas visible par les tests et push 
 - Merger la PR
 - Vérifier que le build de l'image Docker est cached
 - Faire un commit (et push) pour modifier la version de l'app
