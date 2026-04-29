@@ -1,3 +1,8 @@
+# Contraintes
+
+- Les containers ne doivent pas run en root
+- La CI doit se lancer que si cela à un sens (modifier un README ne doit pas trigger un build Docker)
+
 # Part 1
 - Modifier le code
 - Ouvrir une PR
@@ -17,7 +22,7 @@
 
 # Part 2
 - Modifier le code et faire une nouvelle release 0.2.0
-- Corriger le bug et le backporter en 0.1.1
+- Corriger le bug, le backporter en 0.1.1 et release la 0.2.1
 
 # Part 3
 - Modifier le code pour downgrade une dépendance
