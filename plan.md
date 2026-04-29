@@ -2,6 +2,7 @@
 
 - Les containers ne doivent pas run en root
 - La CI doit se lancer que si cela à un sens (modifier un README ne doit pas trigger un build Docker)
+- Deux workflows identiques ne doivent pas se lancer en parallèle sur une même branche
 
 # Part 1
 - Modifier le code
